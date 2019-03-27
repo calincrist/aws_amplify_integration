@@ -7,15 +7,30 @@
 //
 
 import UIKit
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    static var keychain: Keychain?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        AppDelegate.keychain = Keychain(server: Bundle.main.bundleIdentifier!, protocolType: .https)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if let window = window {
+            window.backgroundColor = #colorLiteral(red: 0.9960784314, green: 0.9960784314, blue: 0.9960784314, alpha: 1)
+            
+            let splashViewController = SplashViewController()
+            window.makeKeyAndVisible()
+            window.rootViewController = splashViewController
+            
+        }
+        
         return true
     }
 

@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41D634BF3D08ED55440136F5 /* Pods_aws_amplify_integration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC87BBA034B387CE34E368E /* Pods_aws_amplify_integration.framework */; };
 		CA222C52224B4BB500E8CC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C51224B4BB500E8CC8D /* AppDelegate.swift */; };
-		CA222C54224B4BB500E8CC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C53224B4BB500E8CC8D /* ViewController.swift */; };
-		CA222C57224B4BB500E8CC8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA222C55224B4BB500E8CC8D /* Main.storyboard */; };
 		CA222C59224B4BB700E8CC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA222C58224B4BB700E8CC8D /* Assets.xcassets */; };
 		CA222C5C224B4BB700E8CC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA222C5A224B4BB700E8CC8D /* LaunchScreen.storyboard */; };
+		CA222C67224B519000E8CC8D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C65224B519000E8CC8D /* MainViewController.swift */; };
+		CA222C68224B519000E8CC8D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C66224B519000E8CC8D /* MainViewController.xib */; };
+		CA222C6F224B53D900E8CC8D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C6D224B53D900E8CC8D /* LoginViewController.swift */; };
+		CA222C70224B53D900E8CC8D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C6E224B53D900E8CC8D /* LoginViewController.xib */; };
+		CA222C73224B547200E8CC8D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C71224B547200E8CC8D /* SplashViewController.swift */; };
+		CA222C74224B547200E8CC8D /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C72224B547200E8CC8D /* SplashViewController.xib */; };
+		CA222C77224B54DA00E8CC8D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C76224B54DA00E8CC8D /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BC87BBA034B387CE34E368E /* Pods_aws_amplify_integration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aws_amplify_integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7905F40C26D8C00767557E13 /* Pods-aws_amplify_integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aws_amplify_integration.debug.xcconfig"; path = "Target Support Files/Pods-aws_amplify_integration/Pods-aws_amplify_integration.debug.xcconfig"; sourceTree = "<group>"; };
+		ACFEA6FB130513DC7172D3F4 /* Pods-aws_amplify_integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aws_amplify_integration.release.xcconfig"; path = "Target Support Files/Pods-aws_amplify_integration/Pods-aws_amplify_integration.release.xcconfig"; sourceTree = "<group>"; };
 		CA222C4E224B4BB500E8CC8D /* aws_amplify_integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aws_amplify_integration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA222C51224B4BB500E8CC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA222C53224B4BB500E8CC8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA222C56224B4BB500E8CC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA222C58224B4BB700E8CC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA222C5B224B4BB700E8CC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA222C5D224B4BB700E8CC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA222C65224B519000E8CC8D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CA222C66224B519000E8CC8D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CA222C6D224B53D900E8CC8D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA222C6E224B53D900E8CC8D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CA222C71224B547200E8CC8D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CA222C72224B547200E8CC8D /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		CA222C76224B54DA00E8CC8D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D634BF3D08ED55440136F5 /* Pods_aws_amplify_integration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82DAE7304D9068B59E925F60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7905F40C26D8C00767557E13 /* Pods-aws_amplify_integration.debug.xcconfig */,
+				ACFEA6FB130513DC7172D3F4 /* Pods-aws_amplify_integration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA118D7E30C37FC4E7E497F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC87BBA034B387CE34E368E /* Pods_aws_amplify_integration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA222C45224B4BB500E8CC8D = {
 			isa = PBXGroup;
 			children = (
 				CA222C50224B4BB500E8CC8D /* aws_amplify_integration */,
 				CA222C4F224B4BB500E8CC8D /* Products */,
+				82DAE7304D9068B59E925F60 /* Pods */,
+				AA118D7E30C37FC4E7E497F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +89,50 @@
 			isa = PBXGroup;
 			children = (
 				CA222C51224B4BB500E8CC8D /* AppDelegate.swift */,
-				CA222C53224B4BB500E8CC8D /* ViewController.swift */,
-				CA222C55224B4BB500E8CC8D /* Main.storyboard */,
+				CA222C6B224B523C00E8CC8D /* Login */,
+				CA222C6C224B524300E8CC8D /* Main */,
 				CA222C58224B4BB700E8CC8D /* Assets.xcassets */,
 				CA222C5A224B4BB700E8CC8D /* LaunchScreen.storyboard */,
 				CA222C5D224B4BB700E8CC8D /* Info.plist */,
+				CA222C75224B547600E8CC8D /* Splash */,
+				CA222C78224B54E700E8CC8D /* Extensions */,
 			);
 			path = aws_amplify_integration;
+			sourceTree = "<group>";
+		};
+		CA222C6B224B523C00E8CC8D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CA222C6D224B53D900E8CC8D /* LoginViewController.swift */,
+				CA222C6E224B53D900E8CC8D /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CA222C6C224B524300E8CC8D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA222C65224B519000E8CC8D /* MainViewController.swift */,
+				CA222C66224B519000E8CC8D /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA222C75224B547600E8CC8D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CA222C71224B547200E8CC8D /* SplashViewController.swift */,
+				CA222C72224B547200E8CC8D /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CA222C78224B54E700E8CC8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA222C76224B54DA00E8CC8D /* UIApplication.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA222C60224B4BB700E8CC8D /* Build configuration list for PBXNativeTarget "aws_amplify_integration" */;
 			buildPhases = (
+				27FD450A340EE8012E3B4EDC /* [CP] Check Pods Manifest.lock */,
 				CA222C4A224B4BB500E8CC8D /* Sources */,
 				CA222C4B224B4BB500E8CC8D /* Frameworks */,
 				CA222C4C224B4BB500E8CC8D /* Resources */,
+				BE5ABCE7AC22619F21185C62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,35 +195,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA222C70224B53D900E8CC8D /* LoginViewController.xib in Resources */,
+				CA222C74224B547200E8CC8D /* SplashViewController.xib in Resources */,
 				CA222C5C224B4BB700E8CC8D /* LaunchScreen.storyboard in Resources */,
 				CA222C59224B4BB700E8CC8D /* Assets.xcassets in Resources */,
-				CA222C57224B4BB500E8CC8D /* Main.storyboard in Resources */,
+				CA222C68224B519000E8CC8D /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27FD450A340EE8012E3B4EDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aws_amplify_integration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5ABCE7AC22619F21185C62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aws_amplify_integration/Pods-aws_amplify_integration-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aws_amplify_integration/Pods-aws_amplify_integration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA222C4A224B4BB500E8CC8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA222C54224B4BB500E8CC8D /* ViewController.swift in Sources */,
+				CA222C6F224B53D900E8CC8D /* LoginViewController.swift in Sources */,
+				CA222C67224B519000E8CC8D /* MainViewController.swift in Sources */,
 				CA222C52224B4BB500E8CC8D /* AppDelegate.swift in Sources */,
+				CA222C77224B54DA00E8CC8D /* UIApplication.swift in Sources */,
+				CA222C73224B547200E8CC8D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA222C55224B4BB500E8CC8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA222C56224B4BB500E8CC8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CA222C5A224B4BB700E8CC8D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,11 +397,13 @@
 		};
 		CA222C61224B4BB700E8CC8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7905F40C26D8C00767557E13 /* Pods-aws_amplify_integration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8EGFFE222W;
 				INFOPLIST_FILE = aws_amplify_integration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +417,13 @@
 		};
 		CA222C62224B4BB700E8CC8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFEA6FB130513DC7172D3F4 /* Pods-aws_amplify_integration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8EGFFE222W;
 				INFOPLIST_FILE = aws_amplify_integration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
