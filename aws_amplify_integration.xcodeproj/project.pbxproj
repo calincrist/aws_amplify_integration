@@ -24,6 +24,8 @@
 		CA222C82224B65BD00E8CC8D /* ConfirmSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C80224B65BD00E8CC8D /* ConfirmSignUpViewController.xib */; };
 		CA222C86224B6AD500E8CC8D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C84224B6AD500E8CC8D /* ResetPasswordViewController.swift */; };
 		CA222C87224B6AD500E8CC8D /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */; };
+		CA222C8A224B9BAF00E8CC8D /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */; };
+		CA222C8B224B9BAF00E8CC8D /* NewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		CA222C80224B65BD00E8CC8D /* ConfirmSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmSignUpViewController.xib; sourceTree = "<group>"; };
 		CA222C84224B6AD500E8CC8D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
+		CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPasswordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 			children = (
 				CA222C84224B6AD500E8CC8D /* ResetPasswordViewController.swift */,
 				CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */,
+				CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */,
+				CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */,
 			);
 			path = "Reset password";
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				CA222C74224B547200E8CC8D /* SplashViewController.xib in Resources */,
 				CA222C5C224B4BB700E8CC8D /* LaunchScreen.storyboard in Resources */,
 				CA222C59224B4BB700E8CC8D /* Assets.xcassets in Resources */,
+				CA222C8B224B9BAF00E8CC8D /* NewPasswordViewController.xib in Resources */,
 				CA222C87224B6AD500E8CC8D /* ResetPasswordViewController.xib in Resources */,
 				CA222C7E224B622600E8CC8D /* SignUpViewController.xib in Resources */,
 				CA222C68224B519000E8CC8D /* MainViewController.xib in Resources */,
@@ -312,6 +319,7 @@
 				CA222C52224B4BB500E8CC8D /* AppDelegate.swift in Sources */,
 				CA222C77224B54DA00E8CC8D /* UIApplication.swift in Sources */,
 				CA222C73224B547200E8CC8D /* SplashViewController.swift in Sources */,
+				CA222C8A224B9BAF00E8CC8D /* NewPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

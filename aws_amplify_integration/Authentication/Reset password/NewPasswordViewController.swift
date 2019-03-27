@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  NewPasswordViewController.swift
 //  aws_amplify_integration
 //
 //  Created by Calin Cristian on 27/03/2019.
@@ -8,19 +8,18 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class NewPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func createAccount(_ sender: Any) {
-        let confirmSignupViewController = ConfirmSignUpViewController()
-        self.navigationController?.pushViewController(confirmSignupViewController, animated: true)
+
+    @IBAction func verifyCode(_ sender: Any) {
     }
     
-    @IBAction func dismissModal(_ sender: Any) {
+    @IBAction func dismiss(_ sender: Any) {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
 }

@@ -23,4 +23,12 @@ class LoginViewController: UIViewController {
         
         self.present(modalNavigationController, animated: true, completion: nil)
     }
+    @IBAction func forgotPassword(_ sender: Any) {
+        let resetPasswordViewController = ResetPasswordViewController()
+        
+        let modalNavigationController = UINavigationController(rootViewController: resetPasswordViewController)
+        modalNavigationController.isNavigationBarHidden = true
+        
+        self.present(modalNavigationController, animated: true, completion: nil)
+    }
 }
