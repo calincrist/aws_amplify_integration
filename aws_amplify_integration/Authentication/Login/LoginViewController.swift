@@ -16,4 +16,11 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func signUp(_ sender: Any) {
+        let signUpViewController = SignUpViewController()
+        let modalNavigationController = UINavigationController(rootViewController: signUpViewController)
+        modalNavigationController.isNavigationBarHidden = true
+        
+        self.present(modalNavigationController, animated: true, completion: nil)
+    }
 }
