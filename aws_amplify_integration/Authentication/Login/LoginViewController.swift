@@ -7,15 +7,55 @@
 //
 
 import UIKit
+import AWSMobileClient
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func login(_ sender: Any) {
+        
+        guard let username = usernameTextField.text,
+            let password = passwordTextField.text  else {
+            print("Enter some values please.")
+            return
+        }
+        
+        print("\(username) and \(password)")
+        
+        AWSMobileClient.sharedInstance().signIn(username: username, password: password) { (signInResult, error) in
+            if let error = error  {
+                print("There's an error : \(error.localizedDescription)")
+                print(error)
+                return
+            }
+            
+            guard let signInResult = signInResult else {
+                return
+            }
+            
+            switch (signInResult.signInState) {
+            case .signedIn:
+                print("User is signed in.")
+                
+                DispatchQueue.main.async {
+                    let mainViewController = MainViewController()
+                    UIApplication.setRootView(mainViewController)
+                }
+                
+            case .newPasswordRequired:
+                print("User needs a new password.")
+            default:
+                print("Sign In needs info which is not et supported.")
+            }
+        }
+    }
+    
     @IBAction func signUp(_ sender: Any) {
         let signUpViewController = SignUpViewController()
         let modalNavigationController = UINavigationController(rootViewController: signUpViewController)

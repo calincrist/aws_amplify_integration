@@ -26,6 +26,7 @@
 		CA222C87224B6AD500E8CC8D /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */; };
 		CA222C8A224B9BAF00E8CC8D /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */; };
 		CA222C8B224B9BAF00E8CC8D /* NewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */; };
+		CAD9FD3F224F79E000044806 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD9FD3E224F79E000044806 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
 		CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPasswordViewController.xib; sourceTree = "<group>"; };
+		CAD9FD3E224F79E000044806 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		CA222C50224B4BB500E8CC8D /* aws_amplify_integration */ = {
 			isa = PBXGroup;
 			children = (
+				CAD9FD3E224F79E000044806 /* awsconfiguration.json */,
 				CA222C51224B4BB500E8CC8D /* AppDelegate.swift */,
 				CA222C7A224B61BE00E8CC8D /* Authentication */,
 				CA222C6C224B524300E8CC8D /* Main */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD9FD3F224F79E000044806 /* awsconfiguration.json in Resources */,
 				CA222C82224B65BD00E8CC8D /* ConfirmSignUpViewController.xib in Resources */,
 				CA222C70224B53D900E8CC8D /* LoginViewController.xib in Resources */,
 				CA222C74224B547200E8CC8D /* SplashViewController.xib in Resources */,
@@ -289,6 +293,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-aws_amplify_integration/Pods-aws_amplify_integration-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 			);
@@ -296,6 +305,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 			);

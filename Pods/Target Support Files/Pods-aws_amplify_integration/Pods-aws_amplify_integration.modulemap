@@ -1,0 +1,6 @@
+framework module Pods_aws_amplify_integration {
+  umbrella header "Pods-aws_amplify_integration-umbrella.h"
+
+  export *
+  module * { export * }
+}

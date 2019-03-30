@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmSignUpViewController" customModule="aws_amplify_integration" customModuleProvider="target">
             <connections>
+                <outlet property="verificationCodeTextField" destination="UDP-c6-kaU" id="p2R-qk-OmF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,6 +39,9 @@
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Confirm account creation"/>
+                    <connections>
+                        <action selector="confirmSignUp:" destination="-1" eventType="touchUpInside" id="eqC-Ey-PfD"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phd-IW-jEA">
                     <rect key="frame" x="30" y="789" width="115" height="36"/>
@@ -55,6 +59,9 @@
                     <state key="normal" title="Resend code">
                         <color key="titleColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="resendCode:" destination="-1" eventType="touchUpInside" id="9J9-IJ-L85"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verification code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UDP-c6-kaU" userLabel="Username">
                     <rect key="frame" x="30" y="423" width="354" height="60"/>

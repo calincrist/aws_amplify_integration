@@ -8,23 +8,39 @@
 
 import UIKit
 import KeychainAccess
+import AWSMobileClient
 
 class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        // Check if user availability
-        if AppDelegate.keychain!["token"] != nil {
-            // Show home page
-            let mainViewController = MainViewController()
-            UIApplication.setRootView(mainViewController)
-        } else {
-            // Show login page
-            let loginViewController = LoginViewController()
-            UIApplication.setRootView(loginViewController)
+        AWSMobileClient.sharedInstance().initialize { (userState, error) in
+            if let error = error {
+                print("error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let userState = userState else {
+                return
+            }
+            
+            print("The user is \(userState.rawValue).")
+            
+            // Check if user availability
+            switch userState {
+            case .signedIn:
+                // Show home page
+                let mainViewController = MainViewController()
+                UIApplication.setRootView(mainViewController)
+                break
+                
+            default:
+                // Show login page
+                let loginViewController = LoginViewController()
+                UIApplication.setRootView(loginViewController)
+                break
+            }
         }
     }
-
 }

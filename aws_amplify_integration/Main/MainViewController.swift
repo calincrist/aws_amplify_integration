@@ -7,24 +7,29 @@
 //
 
 import UIKit
+import AWSMobileClient
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var logOutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logOut(_ sender: Any) {
+        AWSMobileClient.sharedInstance().signOut() { error in
+            if let error = error {
+                print(error)
+                return
+            }
+        }
+        
+        
+        let loginViewController = LoginViewController()
+        UIApplication.setRootView(loginViewController)
     }
-    */
-
+    
 }
