@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="aws_amplify_integration" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="Hh9-m4-oCr" id="y0p-Eo-yIb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,11 +26,21 @@
                     <color key="textColor" red="0.53671303560000005" green="1" blue="0.86926768389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-m4-oCr">
+                    <rect key="frame" x="187" y="494" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Hh9-m4-oCr" secondAttribute="height" id="JvT-eG-5ZL"/>
+                        <constraint firstAttribute="width" constant="40" id="kyh-EU-9My"/>
+                    </constraints>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Hh9-m4-oCr" firstAttribute="top" secondItem="Q2D-kQ-3ew" secondAttribute="bottom" constant="8" id="Zjk-Uu-VnW"/>
                 <constraint firstItem="Q2D-kQ-3ew" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cdL-Vr-sZ9"/>
                 <constraint firstItem="Q2D-kQ-3ew" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="sci-yO-VbZ"/>
+                <constraint firstItem="Hh9-m4-oCr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yc5-1e-OXx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

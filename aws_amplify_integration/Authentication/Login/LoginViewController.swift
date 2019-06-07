@@ -28,31 +28,32 @@ class LoginViewController: UIViewController {
         
         print("\(username) and \(password)")
         
-        AWSMobileClient.sharedInstance().signIn(username: username, password: password) { (signInResult, error) in
-            if let error = error  {
-                print("There's an error : \(error.localizedDescription)")
-                print(error)
-                return
-            }
-            
-            guard let signInResult = signInResult else {
-                return
-            }
-            
-            switch (signInResult.signInState) {
-            case .signedIn:
-                print("User is signed in.")
-                
-                DispatchQueue.main.async {
-                    let mainViewController = MainViewController()
-                    UIApplication.setRootView(mainViewController)
+        AWSMobileClient.sharedInstance().signIn(username: username, password: password) {
+            (signInResult, error) in
+                if let error = error  {
+                    print("There's an error : \(error.localizedDescription)")
+                    print(error)
+                    return
                 }
-                
-            case .newPasswordRequired:
-                print("User needs a new password.")
-            default:
-                print("Sign In needs info which is not et supported.")
-            }
+            
+                guard let signInResult = signInResult else {
+                    return
+                }
+            
+                switch (signInResult.signInState) {
+                case .signedIn:
+                    print("User is signed in.")
+                    
+                    DispatchQueue.main.async {
+                        let mainViewController = MainViewController()
+                        UIApplication.setRootView(mainViewController)
+                    }
+                    
+                case .newPasswordRequired:
+                    print("User needs a new password.")
+                default:
+                    print("Sign In needs info which is not et supported.")
+                }
         }
     }
     

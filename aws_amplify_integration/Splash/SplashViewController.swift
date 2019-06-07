@@ -7,13 +7,16 @@
 //
 
 import UIKit
-import KeychainAccess
 import AWSMobileClient
 
 class SplashViewController: UIViewController {
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
 
         AWSMobileClient.sharedInstance().initialize { (userState, error) in
             if let error = error {
@@ -26,6 +29,8 @@ class SplashViewController: UIViewController {
             }
             
             print("The user is \(userState.rawValue).")
+            
+            self.activityIndicator.stopAnimating()
             
             // Check if user availability
             switch userState {

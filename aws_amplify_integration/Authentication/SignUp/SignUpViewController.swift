@@ -24,15 +24,14 @@ class SignUpViewController: UIViewController {
     
     func signUpHandler(signUpResult: SignUpResult?, error: Error?) {
         
-        if let error = error {
-            if let error = error as? AWSMobileClientError {
-                switch(error) {
-                case .usernameExists(let message):
-                    print(message)
-                default:
-                    break
-                }
+        if let error = error as? AWSMobileClientError {
+            switch(error) {
+            case .usernameExists(let message):
+                print(message)
+            default:
+                break
             }
+            
             print("There's an error on signup: \(error.localizedDescription), \(error)")
         }
         

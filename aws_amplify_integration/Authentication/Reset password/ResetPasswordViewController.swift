@@ -30,7 +30,14 @@ class ResetPasswordViewController: UIViewController {
             if let forgotPasswordResult = forgotPasswordResult {
                 switch(forgotPasswordResult.forgotPasswordState) {
                 case .confirmationCodeSent:
-                    let alert = UIAlertController(title: "Code sent", message: "Confirmation code sent via \(forgotPasswordResult.codeDeliveryDetails!.deliveryMedium) to: \(forgotPasswordResult.codeDeliveryDetails!.destination!)", preferredStyle: .alert)
+                    
+                    guard let codeDeliveryDetails = forgotPasswordResult.codeDeliveryDetails else {
+                        return
+                    }
+                    
+                    let alert = UIAlertController(title: "Code sent",
+                                                  message: "Confirmation code sent via \(codeDeliveryDetails.deliveryMedium) to: \(codeDeliveryDetails.destination!)",
+                                                  preferredStyle: .alert)
                     
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel) { _ in
                         let newPasswordViewController = NewPasswordViewController(username: username)
