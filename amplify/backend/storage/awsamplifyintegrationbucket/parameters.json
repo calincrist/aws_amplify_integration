@@ -1,0 +1,13 @@
+{
+    "bucketName": "awsamplifyintegrationbucket",
+    "authPolicyName": "s3_amplify_10b04db8",
+    "unauthPolicyName": "s3_amplify_10b04db8",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "r"
+}

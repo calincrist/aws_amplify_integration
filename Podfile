@@ -7,4 +7,7 @@ target 'aws_amplify_integration' do
   pod 'IQKeyboardManagerSwift'
   pod 'AWSCore', '~> 2.9.0'
   pod 'AWSMobileClient', '~> 2.9.0'
+  
+  pod 'AWSS3', '~> 2.9.0'   # For file transfers
+  
 end

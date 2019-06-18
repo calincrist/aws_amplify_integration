@@ -37,7 +37,8 @@ class SplashViewController: UIViewController {
             case .signedIn:
                 // Show home page
                 let mainViewController = MainViewController()
-                UIApplication.setRootView(mainViewController)
+                let navigationController = UINavigationController(rootViewController: mainViewController)
+                UIApplication.setRootView(navigationController)
                 break
                 
             default:

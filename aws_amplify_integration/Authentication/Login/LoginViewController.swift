@@ -46,7 +46,8 @@ class LoginViewController: UIViewController {
                     
                     DispatchQueue.main.async {
                         let mainViewController = MainViewController()
-                        UIApplication.setRootView(mainViewController)
+                        let navigationController = UINavigationController(rootViewController: mainViewController)
+                        UIApplication.setRootView(navigationController)
                     }
                     
                 case .newPasswordRequired:
