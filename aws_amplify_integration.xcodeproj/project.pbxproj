@@ -26,6 +26,7 @@
 		CA222C87224B6AD500E8CC8D /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */; };
 		CA222C8A224B9BAF00E8CC8D /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */; };
 		CA222C8B224B9BAF00E8CC8D /* NewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */; };
+		CAD91CDF22BAC2B20070338C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD91CDE22BAC2B20070338C /* ImagePicker.swift */; };
 		CAD9FD3F224F79E000044806 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD9FD3E224F79E000044806 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		CA222C85224B6AD500E8CC8D /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
 		CA222C88224B9BAF00E8CC8D /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPasswordViewController.xib; sourceTree = "<group>"; };
+		CAD91CDE22BAC2B20070338C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CAD9FD3E224F79E000044806 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 		CA222C50224B4BB500E8CC8D /* aws_amplify_integration */ = {
 			isa = PBXGroup;
 			children = (
+				CAD91CDD22BAC28A0070338C /* ImagePicker */,
 				CAD9FD3E224F79E000044806 /* awsconfiguration.json */,
 				CA222C51224B4BB500E8CC8D /* AppDelegate.swift */,
 				CA222C7A224B61BE00E8CC8D /* Authentication */,
@@ -184,6 +187,14 @@
 				CA222C89224B9BAF00E8CC8D /* NewPasswordViewController.xib */,
 			);
 			path = "Reset password";
+			sourceTree = "<group>";
+		};
+		CAD91CDD22BAC28A0070338C /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CAD91CDE22BAC2B20070338C /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 				CA222C67224B519000E8CC8D /* MainViewController.swift in Sources */,
 				CA222C52224B4BB500E8CC8D /* AppDelegate.swift in Sources */,
 				CA222C77224B54DA00E8CC8D /* UIApplication.swift in Sources */,
+				CAD91CDF22BAC2B20070338C /* ImagePicker.swift in Sources */,
 				CA222C73224B547200E8CC8D /* SplashViewController.swift in Sources */,
 				CA222C8A224B9BAF00E8CC8D /* NewPasswordViewController.swift in Sources */,
 			);
